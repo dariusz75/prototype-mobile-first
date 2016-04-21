@@ -1,0 +1,32 @@
+$basic-font-size: 13px;
+$basic-line-height: 24px;
+$paragraph-margin: 0 0 15px 0;
+
+@mixin header-mixin($header-font-size, $header-margin-bottom) {
+	font-size: $header-font-size;
+	margin: 0 0 $header-margin-bottom 0;
+	color: #434343;
+	font-weight: 400;
+}
+
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+body {
+	font-size: $basic-font-size;
+	font-family: $font-primary;
+	color: $basic-text-colour;
+}
+
+p {
+	margin: $paragraph-margin;
+	line-height: $basic-line-height;
+}
+
+h2 {
+	@include header-mixin(24px, 12px);
+}
+
+h3 {
+	@include header-mixin(18px, 18px);
+}
