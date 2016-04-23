@@ -5,10 +5,102 @@ $total-width: 100%;
 
 .our-services .single-col {
 	@include column(12);
-	@media screen and (max-width: $tablet) {
+	@media screen and (min-width: $tablet) {
 		@include column(2.4);
 	};
-	@media screen and (max-width: $desktop) {
+	@media screen and (min-width: $desktop) {
 		@include column(2.4);
 	};
+}
+
+
+.advantages .single-col {
+	@include column(12);
+	@media screen and (min-width: $tablet) {
+		@include column(4);
+	};
+	@media screen and (min-width: $desktop) {
+		@include column(4);
+	};
+}
+
+.statistics .single-col {
+	@include column(12);
+	@media screen and (min-width: $phone) {
+		@include column(6);
+	};
+	@media screen and (min-width: $tablet) {
+		@include column(3);
+	};
+	@media screen and (min-width: $desktop) {
+		@include column(3);
+	};
+}
+
+.our-team .single-col {
+	@include column(12);
+	@media screen and (min-width: $tablet) {
+		@include column(4);
+	};
+	@media screen and (min-width: $desktop) {
+		@include column(4);
+	};
+}
+
+.footer-main .single-col {
+	@include column(12);
+	background-color: grey;
+	@media screen and (min-width: $phone) {
+		@include column(6);
+		background-color: red;
+	};
+	@media screen and (min-width: $tablet) {
+		@include column(3);
+		background-color: green;
+	};
+	@media screen and (min-width: $desktop) {
+		@include column(3);
+		background-color: blue;
+	};
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	clear: both;
+	padding: 0 15px;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.section-title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	line-height: 1.1;
+}
+
+
+@mixin basic-button($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $basic-font-size;
+  font-weight: 400;
+  line-height: $basic-line-height;
+  text-transform: uppercase;
 }

@@ -137,18 +137,129 @@ clear: both;
   float: left;
   width: 97.36842%;
   margin: 0 1.31579%; }
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 992px) {
     .our-services .single-col {
       display: inline;
       float: left;
       width: 17.36842%;
       margin: 0 1.31579%; } }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     .our-services .single-col {
       display: inline;
       float: left;
       width: 17.36842%;
       margin: 0 1.31579%; } }
+
+.advantages .single-col {
+  display: inline;
+  float: left;
+  width: 97.36842%;
+  margin: 0 1.31579%; }
+  @media screen and (min-width: 992px) {
+    .advantages .single-col {
+      display: inline;
+      float: left;
+      width: 30.70175%;
+      margin: 0 1.31579%; } }
+  @media screen and (min-width: 1200px) {
+    .advantages .single-col {
+      display: inline;
+      float: left;
+      width: 30.70175%;
+      margin: 0 1.31579%; } }
+
+.statistics .single-col {
+  display: inline;
+  float: left;
+  width: 97.36842%;
+  margin: 0 1.31579%; }
+  @media screen and (min-width: 768px) {
+    .statistics .single-col {
+      display: inline;
+      float: left;
+      width: 47.36842%;
+      margin: 0 1.31579%; } }
+  @media screen and (min-width: 992px) {
+    .statistics .single-col {
+      display: inline;
+      float: left;
+      width: 22.36842%;
+      margin: 0 1.31579%; } }
+  @media screen and (min-width: 1200px) {
+    .statistics .single-col {
+      display: inline;
+      float: left;
+      width: 22.36842%;
+      margin: 0 1.31579%; } }
+
+.our-team .single-col {
+  display: inline;
+  float: left;
+  width: 97.36842%;
+  margin: 0 1.31579%; }
+  @media screen and (min-width: 992px) {
+    .our-team .single-col {
+      display: inline;
+      float: left;
+      width: 30.70175%;
+      margin: 0 1.31579%; } }
+  @media screen and (min-width: 1200px) {
+    .our-team .single-col {
+      display: inline;
+      float: left;
+      width: 30.70175%;
+      margin: 0 1.31579%; } }
+
+.footer-main .single-col {
+  display: inline;
+  float: left;
+  width: 97.36842%;
+  margin: 0 1.31579%;
+  background-color: grey; }
+  @media screen and (min-width: 768px) {
+    .footer-main .single-col {
+      display: inline;
+      float: left;
+      width: 47.36842%;
+      margin: 0 1.31579%;
+      background-color: red; } }
+  @media screen and (min-width: 992px) {
+    .footer-main .single-col {
+      display: inline;
+      float: left;
+      width: 22.36842%;
+      margin: 0 1.31579%;
+      background-color: green; } }
+  @media screen and (min-width: 1200px) {
+    .footer-main .single-col {
+      display: inline;
+      float: left;
+      width: 22.36842%;
+      margin: 0 1.31579%;
+      background-color: blue; } }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  padding: 0 15px; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center; }
+
+h1, h2, h3 {
+  line-height: 1.1; }
 
 body {
   font-size: 13px;
