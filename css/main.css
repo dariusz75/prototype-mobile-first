@@ -1,3 +1,12 @@
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
 /**
  * Global Reset of all HTML Elements
  *
@@ -123,6 +132,24 @@ clear: both;
 }
 
 */
+.our-services .single-col {
+  display: inline;
+  float: left;
+  width: 97.36842%;
+  margin: 0 1.31579%; }
+  @media screen and (max-width: 992px) {
+    .our-services .single-col {
+      display: inline;
+      float: left;
+      width: 17.36842%;
+      margin: 0 1.31579%; } }
+  @media screen and (max-width: 1200px) {
+    .our-services .single-col {
+      display: inline;
+      float: left;
+      width: 17.36842%;
+      margin: 0 1.31579%; } }
+
 body {
   font-size: 13px;
   font-family: "Open Sans", sans-serif;

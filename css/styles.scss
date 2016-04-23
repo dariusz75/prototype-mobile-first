@@ -1,0 +1,14 @@
+$columns: 12;
+$column-width: 65;
+$gutter-width: 30;
+$total-width: 100%;
+
+.our-services .single-col {
+	@include column(12);
+	@media screen and (max-width: $tablet) {
+		@include column(2.4);
+	};
+	@media screen and (max-width: $desktop) {
+		@include column(2.4);
+	};
+}
