@@ -33,14 +33,25 @@
 }
 /* Button */
 .slicknav_btn {
-    margin: 5px 5px 6px;
+    margin: 8px 15px 8px;
+    padding: 10px;
     text-decoration:none;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;  
-    background-color: #222222;
+    border-radius: 4px; 
+    border: 1px solid red; 
+    background-color: $basic-background;
 }
+
+.slicknav_btn:hover {
+    background-color: $basic-border-colour;
+}
+
+.slicknav_btn:focus {
+    background-color: $basic-border-colour;
+}
+
 /* Button Text */
 .slicknav_menu  .slicknav_menutxt {
     color: #FFF;
@@ -49,10 +60,10 @@
 }
 /* Button Lines */
 .slicknav_menu .slicknav_icon-bar {
-  background-color: #f5f5f5;
+  background-color: red;
 }
 .slicknav_menu {
-    background:#4c4c4c;
+    background: $basic-background;
     padding:5px;
 }
 .slicknav_nav {
@@ -64,6 +75,7 @@
 .slicknav_nav, .slicknav_nav ul {
     list-style: none;
     overflow:hidden;
+    padding-left: 15px;
 }
 .slicknav_nav ul {
     padding:0;
@@ -74,11 +86,13 @@
     margin:2px 5px;
 }
 .slicknav_nav a{
+  font-size: $basic-font-size;
     padding:5px 10px;
-    margin:2px 5px;
     text-decoration:none;
-    color:#fff;
+    color: $basic-text-colour;
+    @include basic-transition;
 }
+
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
     padding:0;
@@ -95,7 +109,7 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background:#ccc;
+    background: $accent-colour;
     color:#222;
 }
 .slicknav_nav .slicknav_txtnode {
