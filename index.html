@@ -8,6 +8,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!-- Moblie menu -->
+	<script src="js/jquery.slicknav.min.js"></script>
 </head>
 <body>
 	<div id="main-container">
@@ -26,8 +29,10 @@
 								<li><a href="#">Shop</a></li>
 								<li><a href="#">Co-operation</a></li>
 								<li><a href="#">Contact</a></li>
-								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>								
 							</ul>
+						</div>
+						<div id="mobile-menu">
+							
 						</div>						
 					</div>	
 				</div>
@@ -432,5 +437,15 @@
 			</div>
 	</footer>
 	</div>
+<script>
+	$(document).ready(function(){
+	// Mobile menu script
+		$('#main-menu').slicknav({
+			prependTo: '#mobile-menu',
+			label: ''
+		});
+	});
+</script>
+</script>
 </body> 
 </html>

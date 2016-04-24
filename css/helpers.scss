@@ -45,7 +45,7 @@ $desktop: 1200px;
 	display: inline-block;
 }
 
-.block {
+@mixin block {
 	display: block;
 }
 
@@ -57,7 +57,7 @@ $desktop: 1200px;
 	height: 100%;
 }
 
-.list-style.none {
+@mixin list-style-none {
 	list-style-type: none;
 }
 
@@ -91,8 +91,8 @@ clear: both;
 	-webkit-border-radius: $radius;
 }
 
-.basic-transition {
-	transition: all 0.2s ease-in-out;
+@mixin basic-transition {
+	transition: all 0.5s ease-in-out;
 }
 
 @mixin var-transition($time) {

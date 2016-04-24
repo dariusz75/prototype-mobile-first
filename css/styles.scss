@@ -104,3 +104,73 @@ h1, h2, h3 {
   line-height: $basic-line-height;
   text-transform: uppercase;
 }
+
+header {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $basic-background;
+	border-bottom: 1px solid $basic-border-colour;
+	box-shadow: 0 0 1 $basic-border-colour;
+}
+
+.navbar {
+	height: 63px;
+}
+
+.nav-logo {
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+
+.main-menu-content {
+	float: right;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50);
+	z-index: 2;
+}
+
+ul {
+	@include list-style-none;
+}
+
+li {
+	float: left;
+	@include block;
+}
+
+a {
+	color: $menu-link-colour;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 20px 14px;
+	line-height: 20px;
+	@include basic-transition;
+}
+
+a:hover {
+	color: $accent-colour;
+}
+
+// hides main menu
+#main-menu {
+	display: none;
+	@media screen and (min-width: $phone) {
+		display: block;
+	};
+}
+
+// hides mobile menu
+.slicknav_menu {
+	position: fixed;
+	left: 0;
+	right: 0;
+	@media screen and (min-width: $phone) {
+		display: none;
+	};
+}
