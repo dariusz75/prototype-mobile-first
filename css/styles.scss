@@ -156,11 +156,12 @@ a {
 	padding: 20px 14px;
 	line-height: 20px;
 	@include basic-transition;
+		&:hover {
+		color: $accent-colour;
+	}
 }
 
-a:hover {
-	color: $accent-colour;
-}
+
 
 // hides main menu
 #main-menu {
@@ -182,4 +183,26 @@ a:hover {
 
 #mobile-menu div ul li{
 float: none;
+}
+
+// Main slider
+.bxslider {
+	.main-slide-1 {
+		background-image: url('../img/slider_1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 0;	
+	};
+	.main-slide-2 {
+		background-image: url('../img/slider_2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	};
+	.main-slide-3 {
+		background-image: url('../img/slider_3.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	};
 }
