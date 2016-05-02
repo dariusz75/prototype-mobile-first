@@ -15,6 +15,8 @@
 	<script src="js/jquery.slicknav.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- Loading images -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
 	<div id="main-container">
@@ -48,7 +50,7 @@
 				<li>
 					<div class="main-slide-1">
 						<div class="container">
-							<div class="main-slider-container">
+							<div class="main-slider-content">
 								<h1>Performance and safety refined</h1>
 								<p>Model S is designed from the ground up to be the safest, most exhilarating saloon on the road. With unparalleled performance delivered through Tesla’s unique, all-electric powertrain, Model S accelerates from 0 to 60 mph in as little as 2.8 seconds. Model S comes with Autopilot capabilities designed to make your highway driving not only safer, but stress free.</p>
 								<a href="#">More...</a>
@@ -60,7 +62,7 @@
 				<li>
 					<div class="main-slide-2">
 						<div class="container">
-							<div class="main-slider-container">
+							<div class="main-slider-content">
 								<h1>Meet Model X</h1>
 								<p>Model X is the safest, fastest and most capable sport utility vehicle in history. With all-wheel drive and a 90 kWh battery providing 303 miles of range, Model X has ample seating for seven adults and all of their gear. And it’s ludicrously fast, accelerating from zero to 60 miles per hour in as quick as 3.2 seconds.</p>
 								<a href="#">More...</a>
@@ -72,7 +74,7 @@
 				<li>
 					<div class="main-slide-3">
 						<div class="container">
-							<div class="main-slider-container">
+							<div class="main-slider-content">
 								<h1>Accelerating Sustainable Transport</h1>
 								<p>Model 3 combines real world range, performance, safety and spaciousness into a premium sedan that only Tesla can build. Our most affordable car yet, Model 3 achieves 215 miles of range per charge while starting at only 35,000 USD before incentives. Model 3 is designed to attain the highest safety ratings in every category.</p>
 								<a href="#">More...</a>
@@ -442,19 +444,21 @@
 	</div>
 <script>
 	$(document).ready(function(){
-	// Mobile menu script
+		/* menu mobilne */
 		$('#main-menu').slicknav({
-			prependTo: '#mobile-menu',
+			prependTo: '#attach-mobile-menu',
 			label: ''
 		});
-
-	// Main slider
-	$('#main-slider').bxSlider({
-		mode: 'fade',
-		auto: true,
-		controls: true,
-		pager: false
+		
 	});
+	$('#main-container').imagesLoaded(function(){
+		/* main slider */
+		$('#main-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			controls: true,
+			pager: false
+		});
 	});
 </script>
 </script>
