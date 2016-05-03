@@ -368,6 +368,32 @@ a {
     border: white 1px solid;
     padding: 12px 30px; }
 
+.our-services {
+  padding: 80px 0 60px 0;
+  overflow: auto; }
+  .our-services .single-col {
+    margin-bottom: 30px; }
+    .our-services .single-col span {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      background-color: #EEE;
+      text-align: center;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      margin-bottom: 30px;
+      transition: all 0.5s ease-in-out; }
+      .our-services .single-col span:hover {
+        background-color: #45B6AF; }
+      .our-services .single-col span:hover > i {
+        color: white; }
+      .our-services .single-col span i {
+        color: #45B6AF;
+        font-size: 30px;
+        line-height: 90px;
+        transition: all 0.5s ease-in-out; }
+
 body {
   font-size: 13px;
   font-family: "Open Sans", sans-serif;
