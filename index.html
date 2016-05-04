@@ -9,7 +9,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- bxSlider CSS file -->
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+	<!-- Owl Carousel -->
+	<link href="owl-carousel/owl.carousel.css" rel="stylesheet"/>
+	<link href="owl-carousel/owl.theme.css" rel="stylesheet"/>
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<!-- Moblie menu -->
 	<script src="js/jquery.slicknav.min.js"></script>
@@ -17,6 +21,8 @@
 	<script src="js/jquery.bxslider.min.js"></script>
 	<!-- Loading images -->
 	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
 </head>
 <body>
 	<div id="main-container">
@@ -444,20 +450,25 @@
 	</div>
 <script>
 	$(document).ready(function(){
-		/* menu mobilne */
+		/* mobile menu */
 		$('#main-menu').slicknav({
 			prependTo: '#attach-mobile-menu',
 			label: ''
-		});
-		
+		});		
 	});
 	$('#main-container').imagesLoaded(function(){
-		/* main slider */
+		/* glowny slider */
 		$('#main-slider').bxSlider({
 			mode: 'fade',
 			auto: true,
 			controls: true,
 			pager: false
+		});
+		$('#portfolio-carousel').owlCarousel({
+			autoPlay: 10000,
+			items: 3,
+			itemsDesktopSmall: [1199,2],
+			itemsTablet: [768,1]
 		});
 	});
 </script>
