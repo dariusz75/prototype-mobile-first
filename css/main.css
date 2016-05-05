@@ -289,7 +289,7 @@ a {
   font-weight: 400;
   padding: 20px 14px;
   line-height: 20px;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   a:hover {
     color: #45B6AF; }
 
@@ -383,7 +383,7 @@ a {
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
       margin-bottom: 30px;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.2s ease-in-out; }
       .our-services .single-col span:hover {
         background-color: #45B6AF; }
       .our-services .single-col span:hover > i {
@@ -392,7 +392,7 @@ a {
         color: #45B6AF;
         font-size: 30px;
         line-height: 90px;
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.2s ease-in-out; }
 
 .portfolio {
   background-color: #FFF4F2;
@@ -405,6 +405,20 @@ a {
   .portfolio-item img {
     width: 100%;
     cursor: move; }
+  .portfolio-item:hover .portfolio-hover {
+    opacity: 1; }
+  .portfolio-item:hover h3 {
+    transform: translateX(0%);
+    transform: translateY(0%);
+    transform: translateZ(0%); }
+  .portfolio-item:hover p {
+    transform: translateX(0%);
+    transform: translateY(0%);
+    transform: translateZ(0%); }
+  .portfolio-item:hover a {
+    transform: translateX(0%);
+    transform: translateY(0%);
+    transform: translateZ(0%); }
 
 .portfolio-hover {
   position: absolute;
@@ -412,7 +426,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
   text-align: center;
   overflow: hidden;
   background-color: rgba(69, 182, 175, 0.7);
@@ -421,16 +435,15 @@ a {
 .portfolio-hover-inner {
   position: absolute;
   width: 100%;
-  height: 50%;
-  transform: translateY(-50%); }
+  top: 50%;
+  transform: translateX(0%);
+  transform: translateY(-50%);
+  transform: translateZ(0%); }
   .portfolio-hover-inner h3 {
     font-size: 18px;
     margin: 0 0 6px 0;
     color: white;
     font-weight: 400;
-    transform: translateX(0%);
-    transform: translateY(-400%);
-    transform: translateZ(0%);
     transition: all 0.6s ease-in-out; }
   .portfolio-hover-inner p {
     color: white;
@@ -452,13 +465,16 @@ a {
     transform: translateX(0%);
     transform: translateY(400%);
     transform: translateZ(0%);
-    transition: all 0.6s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.6s ease-in-out; }
     .portfolio-hover-inner a i {
       line-height: 40px;
       font-size: 14px;
       color: white;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.6s ease-in-out; }
+    .portfolio-hover-inner a:hover {
+      background-color: white; }
+    .portfolio-hover-inner a:hover i {
+      color: #45B6AF; }
   .portfolio-hover-inner a.portfolio-link-left {
     transition: all 0.4s ease-in-out; }
   .portfolio-hover-inner a.portfolio-link-right {
@@ -622,7 +638,7 @@ h3 {
   padding: 5px 10px;
   text-decoration: none;
   color: #888;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
 
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
