@@ -1,3 +1,10 @@
+@import 'grid';
+@import 'reset';
+@import 'colors';
+@import 'helpers';
+@import 'typography';
+@import 'slicknav';
+
 $columns: 12;
 $column-width: 65;
 $gutter-width: 30;
@@ -12,7 +19,6 @@ $total-width: 100%;
 		@include column(2.4);
 	};
 }
-
 
 .advantages .single-col {
 	@include column(12);
@@ -358,26 +364,181 @@ float: none;
 		@include border-radius-single(50%);
 		border: 1px solid white;
 		text-align: center;
-		margin: 0 5px;
 		@include translate3d(0%, 400%, 0%);
 		@include var-transition(0.6s);
-		i{
-			line-height: 40px;
-			font-size: 14px;
-			color: white;
-			@include var-transition(0.6s);
-		}
+		
 		&:hover {
 			background-color: white;
+		}
+	}
+
+	a.portfolio-link-left {
+		@include var-transition(0.4s);
+		i{
+			color: white;
+			@include var-transition(0.6s);
+			line-height: 40px;
 		}
 		&:hover i {
 			color: $accent-colour;
 		}
 	}
-	a.portfolio-link-left {
-		@include var-transition(0.4s);
-	}
+
 	a.portfolio-link-right {
 		@include var-transition(0.6s);
+		
+	i{
+			color: white;
+			@include var-transition(0.6s);
+
+		}
+		&:hover i {
+			color: $accent-colour;
+		}
+	}
+}
+
+
+.section-video {
+	display: none;
+	position: relative;
+	.container {
+		padding: 175px 0;
+		z-index: 5;
+	}
+	@media screen and (min-width: $phone) {
+		display: block;
+	}
+}
+
+#movie {
+	@include size(100%, 100%);
+	@include dark-overlay;
+}
+
+.video-line{
+	text-align: center;
+	h2 {
+		font-size: 48px;
+		margin-bottom: 26px;
+		color: white;
+		position: relative;
+	}
+	a {
+		position: relative;
+		@include basic-button(white, $accent-colour);
+		margin: 8px 0;
+		padding: 12px 30px;
+		@include basic-transition;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.section-video-text {
+	background-color: $accent-colour;
+	padding: 50px 0;
+	text-align: center;
+	h2 {
+		color: white;
+		a {
+			@include basic-button(white, $accent-colour);
+			border: solid white 1px;
+			margin: 8px 0 8px 65px;
+			padding: 10px 30px;
+			@include basic-transition;
+			&:hover {
+				color: $accent-colour;
+				background-color: white;
+				@include basic-transition;
+			}
+		}
+	}
+}
+
+.advantages {
+	padding: 80px 0 0 20px;
+	@include clerfix;
+	.single-col {
+		text-align: center;
+		margin-bottom: 30px;
+		span {
+			display: block;
+			float: none;
+			margin: 20px 0 20px 0;
+			i {
+				font-size: 30px;
+				color: $accent-colour;
+			}
+			@media screen and (min-width: $phone) {
+				display: inline-block;
+				float: left;
+				text-align: initial;
+			}
+		}
+		.services-content {
+			margin-left: 0px;
+			@media screen and (min-width: $phone) {
+				margin-left: 80px;
+			}
+		}
+		@media screen and (min-width: $phone) {
+			text-align: left;
+		}
+	}
+}
+
+// Statistics
+
+.statistics {
+	background-color: $alternate-background;
+	overflow: auto;
+	padding: 80px 0 60px 0;
+	.single-col {
+		text-align: center;
+		.statistics-content {
+			margin-bottom: 30px;
+			h3 {
+				font-size: 60px;
+				color: $accent-colour;
+				margin: 0;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.photo-banner {
+	text-align: center;
+	background: url('../img/paralel.jpg') no-repeat center center fixed;
+	.photo-banner-inner {
+		position: relative;
+		z-index: 0;
+		&:after {
+			@include dark-overlay;
+		}
+		.container {
+			position: relative;
+			z-index: 1;
+			padding: 175px;
+		}
+		h2 {
+			@include header-mixin(48px, 26px);
+			color: white;
+		}
+		a {
+			position: relative;
+			@include basic-button(white, $accent-colour);
+			margin: 8px 0;
+			padding: 12px 30px;
+			@include basic-transition;
+			&:hover {
+				opacity: 0.7;
+				@include basic-transition;
+			}
+		}
 	}
 }
