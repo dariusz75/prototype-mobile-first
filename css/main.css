@@ -492,29 +492,25 @@ h3 {
   display: inline;
   float: left;
   width: 97.36842%;
-  margin: 0 1.31579%;
-  background-color: grey; }
+  margin: 0 1.31579%; }
   @media screen and (min-width: 768px) {
     .footer-main .single-col {
       display: inline;
       float: left;
       width: 47.36842%;
-      margin: 0 1.31579%;
-      background-color: red; } }
+      margin: 0 1.31579%; } }
   @media screen and (min-width: 992px) {
     .footer-main .single-col {
       display: inline;
       float: left;
       width: 22.36842%;
-      margin: 0 1.31579%;
-      background-color: green; } }
+      margin: 0 1.31579%; } }
   @media screen and (min-width: 1200px) {
     .footer-main .single-col {
       display: inline;
       float: left;
       width: 22.36842%;
-      margin: 0 1.31579%;
-      background-color: blue; } }
+      margin: 0 1.31579%; } }
 
 body {
   padding-top: 50px; }
@@ -768,8 +764,7 @@ a {
     transition: all 0.4s ease-in-out; }
     .portfolio-hover-inner a.portfolio-link-left i {
       color: white;
-      transition: all 0.6s ease-in-out;
-      line-height: 40px; }
+      transition: all 0.6s ease-in-out; }
     .portfolio-hover-inner a.portfolio-link-left:hover i {
       color: #45B6AF; }
   .portfolio-hover-inner a.portfolio-link-right {
@@ -935,6 +930,140 @@ a {
       .photo-banner .photo-banner-inner a:hover {
         opacity: 0.7;
         transition: all 0.2s ease-in-out; }
+
+.our-team {
+  padding: 55px 0 10px 0;
+  text-align: auto;
+  overflow: auto; }
+  .our-team .single-col {
+    margin-bottom: 30px; }
+
+.team-members {
+  overflow: auto;
+  margin-bottom: 40px; }
+
+.team-member img {
+  margin-bottom: 30px;
+  width: 100%; }
+.team-member h3 {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+  color: #434343;
+  font-weight: 400; }
+.team-member span {
+  line-height: 24px;
+  margin: 0 0 17px 0;
+  display: inline-block; }
+.team-member p {
+  margin-bottom: 20px; }
+
+.members-social li {
+  display: inline-block;
+  margin-right: 18px; }
+  .members-social li i {
+    font-size: 18px;
+    color: #595655;
+    transition: all 0.2s ease-in-out; }
+    .members-social li i:hover {
+      color: #45B6AF;
+      transition: all 0.2s ease-in-out; }
+
+footer {
+  background-color: #43444D;
+  color: #D4D4D4; }
+
+.footer-main {
+  padding: 85px 0 0 65px;
+  overflow: auto; }
+  .footer-main h3 {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+    color: #434343;
+    font-weight: 400;
+    color: white; }
+  .footer-main .single-col {
+    margin-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      .footer-main .single-col {
+        margin-bottom: 0; } }
+
+.footer-social {
+  list-style-type: none; }
+  .footer-social li {
+    display: inline-block;
+    margin-right: 6px; }
+    .footer-social li a {
+      padding: 0;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #535353;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out; }
+      .footer-social li a:hover {
+        background-color: #535353; }
+      .footer-social li a i {
+        font-size: 14px;
+        color: #EBEBEB;
+        line-height: 28px; }
+
+.our-blog ul {
+  list-style: none; }
+  .our-blog ul li {
+    padding-top: 15px;
+    border-top: solid 1px #535353; }
+    .our-blog ul li:first-child {
+      padding-top: 0;
+      border-top: none; }
+    .our-blog ul li h4 {
+      margin: 0;
+      font-size: 13px; }
+      .our-blog ul li h4 a {
+        padding: 0;
+        color: #D4D4D4;
+        font-weight: 400;
+        transition: all 0.2s ease-in-out; }
+        .our-blog ul li h4 a:hover {
+          text-decoration: underline;
+          transition: all 0.2s ease-in-out; }
+
+.post-date {
+  color: #B4B4B4;
+  margin: 0 0 10px 0;
+  display: inline-block; }
+
+.footer-gallery ul {
+  list-style: none; }
+.footer-gallery li {
+  display: inline-block;
+  margin: 0 6px 6px 0; }
+  .footer-gallery li a {
+    padding: 0;
+    transition: all 0.2s ease-in-out; }
+    .footer-gallery li a:hover {
+      opacity: 0.7; }
+
+.more-links li {
+  display: block !important;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #535353; }
+.more-links a {
+  color: #D4D4D4; }
+
+.copyright {
+  padding: 10px 0;
+  background-color: #31323A; }
+  .copyright p {
+    font-size: 12px;
+    color: white;
+    margin: 0; }
+    .copyright p a {
+      color: #D4D4D4; }
 
 body {
   font-size: 13px;

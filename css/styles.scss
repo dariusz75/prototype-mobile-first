@@ -55,18 +55,14 @@ $total-width: 100%;
 
 .footer-main .single-col {
 	@include column(12);
-	background-color: grey;
 	@media screen and (min-width: $phone) {
 		@include column(6);
-		background-color: red;
 	};
 	@media screen and (min-width: $tablet) {
 		@include column(3);
-		background-color: green;
 	};
 	@media screen and (min-width: $desktop) {
 		@include column(3);
-		background-color: blue;
 	};
 }
 
@@ -377,7 +373,6 @@ float: none;
 		i{
 			color: white;
 			@include var-transition(0.6s);
-			line-height: 40px;
 		}
 		&:hover i {
 			color: $accent-colour;
@@ -511,6 +506,7 @@ float: none;
 	}
 }
 
+
 .photo-banner {
 	text-align: center;
 	background: url('../img/paralel.jpg') no-repeat center center fixed;
@@ -539,6 +535,179 @@ float: none;
 				opacity: 0.7;
 				@include basic-transition;
 			}
+		}
+	}
+}
+
+// our team
+
+.our-team {
+	padding: 55px 0 10px 0;
+	text-align: auto;
+	overflow: auto;
+	.single-col {
+		margin-bottom: 30px;
+	}
+}
+
+.team-members {
+	overflow: auto;
+	margin-bottom: 40px;
+}
+
+.team-member {
+	img {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	h3 {
+		@include header-mixin(18px, 4px);
+	}
+	span {
+		line-height: 24px;
+		margin: 0 0 17px 0;
+		display: inline-block;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+
+.members-social {
+	li {
+		display: inline-block;
+		margin-right: 18px;
+		i {
+			font-size: 18px;
+			color: #595655;
+			@include basic-transition;
+			&:hover {
+				color: $accent-colour;
+				@include basic-transition;
+			}
+		}
+	}
+}
+
+// footer
+footer {
+	background-color: $footer-background;
+	color: $bright-text-colour;
+	}
+
+.footer-main {
+		padding: 85px 0 0 65px;
+		overflow: auto;
+		h3 {
+			@include header-mixin(18px, 30px);
+			color: white;
+		}
+		.single-col {
+			margin-bottom: 30px;
+			@media screen and (min-width: $phone) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+.footer-social {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin-right: 6px; 
+		a {
+			padding: 0;
+			display: inline-block;
+			@include size(30px, 30px);
+			border: 1px solid $footer-social-borders;
+			@include border-radius-single(4px);
+			text-align: center;
+			text-decoration: none;
+			@include basic-transition;
+			&:hover {
+				background-color: $footer-social-borders;
+			}
+			i {
+				font-size: 14px;
+				color: $footer-social-icons;
+				line-height: 28px;
+			}
+		}
+	}
+}
+
+.our-blog {
+	ul {
+		list-style: none;
+		li {
+			padding-top: 15px;
+			border-top: solid 1px $footer-social-borders;
+			&:first-child {
+				padding-top: 0;
+				border-top: none;
+			}
+			h4 {
+				margin: 0;
+				font-size: 13px;
+				a {
+					padding: 0;
+					color: $bright-text-colour;
+					font-weight: 400;
+					@include basic-transition;
+					&:hover {
+						text-decoration: underline;
+						@include basic-transition;
+					}
+				}
+			}
+		}
+	}
+}
+
+.post-date {
+	color: $footer-post-date;
+	margin: 0 0 10px 0;
+	display: inline-block;
+}
+
+.footer-gallery {
+	ul {
+		list-style: none;
+	}
+		li {
+			display: inline-block;
+			margin: 0 6px 6px 0;
+			a {
+				padding: 0;
+				@include basic-transition;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+}
+
+.more-links {
+	li {
+		display: block !important;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid $footer-social-borders;
+	}
+	a {
+		color: $bright-text-colour;
+	}
+}
+
+.copyright {
+	padding: 10px 0;
+	background-color: $footer-copyright-background;
+	p {
+		font-size: 12px;
+		color: white;
+		margin: 0;
+		a {
+			color: $bright-text-colour;
 		}
 	}
 }
