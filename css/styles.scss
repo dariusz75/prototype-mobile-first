@@ -44,12 +44,12 @@ $total-width: 100%;
 }
 
 .our-team .single-col {
-	@include column(12);
+	@include column(6);
 	@media screen and (min-width: $tablet) {
-		@include column(4);
+		@include column(3);
 	};
 	@media screen and (min-width: $desktop) {
-		@include column(4);
+		@include column(3);
 	};
 }
 
@@ -159,8 +159,8 @@ li {
 
 a {
 	color: $menu-link-colour;
-	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-family: $font-primary;
 	font-weight: 400;
 	padding: 20px 14px;
 	line-height: 20px;
@@ -204,7 +204,7 @@ float: none;
 		
 	};
 	.main-slide-2 {
-		background-image: url('../img/slider_2.jpg');
+		background-image: url('../img/slider_2-test.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -235,16 +235,16 @@ float: none;
 		margin-top: 250px; 
 		font-size: 20px;
 		line-height: 30px;
-		font-weight: 400;
+		font-weight: 700;
 		@media screen and (min-width: $phone) {
-			color: red;
+			color: $accent-colour;
 			margin-top: 280px; 
 			font-size: 30px;
 		}
 		@media screen and (min-width: $tablet) {	
 			font-size: 40px;
 			line-height: 60px;
-			color: green;
+			color: $accent-colour;
 		}
 	}
 
@@ -252,11 +252,13 @@ float: none;
 		font-size: 12px;
 		line-height: 24px;
 		@media screen and (min-width: $phone) {
-			font-size: 18px;
+			font-size: 25px;
 			padding-bottom: 20px;
 		}
 		@media screen and (min-width: $tablet) {
-			font-size: 18px;
+			font-size: 25px;
+			line-height: 30px;
+			color: $accent-colour-pale;
 		}
 	}
 	a {
@@ -294,6 +296,13 @@ float: none;
 				line-height: 90px;
 				@include basic-transition;
 			}
+		}
+		h3 {
+			color: $accent-colour;
+			font-weight: 700;
+		}
+		p {
+			font-size: 16px;
 		}
 	}
 }
@@ -510,7 +519,7 @@ float: none;
 
 .photo-banner {
 	text-align: center;
-	background: url('../img/paralel.jpg') no-repeat center center fixed;
+	background: url('../img/paralel.png') no-repeat center center fixed;
 	.photo-banner-inner {
 		position: relative;
 		z-index: 0;
@@ -549,6 +558,11 @@ float: none;
 	.single-col {
 		margin-bottom: 30px;
 	}
+	h2 {
+			color: $accent-colour;
+			font-weight: 700;
+			font-size: 30px;
+		}
 }
 
 .team-members {
@@ -562,7 +576,7 @@ float: none;
 		width: 100%;
 	}
 	h3 {
-		@include header-mixin(18px, 4px);
+		@include header-mixin(24px, 4px);
 	}
 	span {
 		line-height: 24px;
