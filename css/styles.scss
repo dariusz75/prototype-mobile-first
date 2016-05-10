@@ -273,6 +273,7 @@ float: none;
 	overflow: auto;
 	.single-col {
 		margin-bottom: 30px;
+		text-align: center;
 		span {
 			display: inline-block;
 			@include size(90px, 90px);

@@ -665,7 +665,8 @@ a {
   padding: 80px 0 60px 0;
   overflow: auto; }
   .our-services .single-col {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
     .our-services .single-col span {
       display: inline-block;
       width: 90px;

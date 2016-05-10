@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+	<!-- Animate CSS file -->
+	<link href="css/animate.css" rel="stylesheet"/>
 	<!-- Owl Carousel -->
 	<link href="owl-carousel/owl.carousel.css" rel="stylesheet"/>
 	<link href="owl-carousel/owl.theme.css" rel="stylesheet"/>
@@ -25,6 +27,10 @@
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<!-- Count to -->
 	<script src="js/jquery.countTo.js"></script>
+	<!-- Viewport Checker -->
+	<script src="js/jquery.viewportchecker.js"></script>
+	<!-- YT PLAYER -->
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
 </head>
 <body>
 	<div id="main-container">
@@ -32,7 +38,7 @@
 			<nav>
 				<div class="container">
 					<div class="navbar">
-						<div class="nav-logo">
+						<div class="nav-logo animated bounce">
 							<a href="#"><img src="./img/logo.png" alt="logo"></a>
 						</div>
 						<div class="main-menu-content">
@@ -59,10 +65,10 @@
 					<div class="main-slide-1">
 						<div class="container">
 							<div class="main-slider-content">
-								<h1>Performance and safety refined</h1>
-								<p>Model S is designed from the ground up to be the safest, most exhilarating saloon on the road. With unparalleled performance delivered through Tesla’s unique, all-electric powertrain, Model S accelerates from 0 to 60 mph in as little as 2.8 seconds. Model S comes with Autopilot capabilities designed to make your highway driving not only safer, but stress free.</p>
-								<a href="#">More...</a>
-								<img src="img/600-Model-X.jpg" alt="">
+								<h1 class="animated fadeInDown">Performance and safety refined</h1>
+								<p class="animated fadeInLeft">Model S is designed from the ground up to be the safest, most exhilarating saloon on the road. With unparalleled performance delivered through Tesla’s unique, all-electric powertrain, Model S accelerates from 0 to 60 mph in as little as 2.8 seconds. Model S comes with Autopilot capabilities designed to make your highway driving not only safer, but stress free.</p>
+								<a href="#" class="animated fadeInUp">More...</a>
+								<img class="animated fadeInDown" src="img/600-Model-X.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -71,10 +77,10 @@
 					<div class="main-slide-2">
 						<div class="container">
 							<div class="main-slider-content">
-								<h1>Meet Model X</h1>
-								<p>Model X is the safest, fastest and most capable sport utility vehicle in history. With all-wheel drive and a 90 kWh battery providing 303 miles of range, Model X has ample seating for seven adults and all of their gear. And it’s ludicrously fast, accelerating from zero to 60 miles per hour in as quick as 3.2 seconds.</p>
-								<a href="#">More...</a>
-								<img src="img/600-Model-S.jpg" alt="">
+								<h1 class="animated fadeInDown">Meet Model X</h1>
+								<p class="animated fadeInLeft">Model X is the safest, fastest and most capable sport utility vehicle in history. With all-wheel drive and a 90 kWh battery providing 303 miles of range, Model X has ample seating for seven adults and all of their gear. And it’s ludicrously fast, accelerating from zero to 60 miles per hour in as quick as 3.2 seconds.</p>
+								<a href="#" class="animated fadeInUp">More...</a>
+								<img class="animated fadeInDown" src="img/600-Model-S.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -83,10 +89,10 @@
 					<div class="main-slide-3">
 						<div class="container">
 							<div class="main-slider-content">
-								<h1>Accelerating Sustainable Transport</h1>
-								<p>Model 3 combines real world range, performance, safety and spaciousness into a premium sedan that only Tesla can build. Our most affordable car yet, Model 3 achieves 215 miles of range per charge while starting at only 35,000 USD before incentives. Model 3 is designed to attain the highest safety ratings in every category.</p>
-								<a href="#">More...</a>
-								<img src="img/600-Model-3.jpg" alt="">
+								<h1 class="animated fadeInDown">Accelerating Sustainable Transport</h1>
+								<p class="animated fadeInLeft">Model 3 combines real world range, performance, safety and spaciousness into a premium sedan that only Tesla can build. Our most affordable car yet, Model 3 achieves 215 miles of range per charge while starting at only 35,000 USD before incentives. Model 3 is designed to attain the highest safety ratings in every category.</p>
+								<a href="#" class="animated fadeInUp">More...</a>
+								<img class="animated fadeInDown" src="img/600-Model-3.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -97,28 +103,28 @@
 <!-- Services -->
 	<div class="our-services">
 		<div class="conteiner">
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInLeft">
 				<span><i class="fa fa-battery-full" aria-hidden="true"></i></span>
 				<h3>The Model S is a beast</h3>
 				<p>Zero-emission vehicles should no longer be regarded as less capable than their gas-powered peers. While Tesla is so far the only company to introduce a desirable fully electric car with high performance that doesn't make any crucial trade-offs, it just takes one to prove it can be done.</p>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInDown">
 				<span><i class="fa fa-battery-half" aria-hidden="true"></i></span>
 				<h3>Tesla sells every car it can make</h3>
 				<p>Demand for Tesla's vehicles is growing faster than the company can ramp up supply. Even after delivering the Model S for two years, demand for the car remains mind-boggling.</p>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInUp">
 				<span><i class="fa fa-battery-quarter" aria-hidden="true"></i></span>
 				<h3> Tesla has a big vision</h3>
 				<p>After add-ons, most buyers spend about $100,000 on a Model S. So while Tesla's only currently available vehicle might be too expensive for many people to even consider buying, the company hopes to change this by late 2016.</p>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInDown">
 				<span><i class="fa fa-battery-half" aria-hidden="true"></i></span>
 				<h3>Tesla runs its business differently</h3>
 				<p>Considering the practice unethical, Tesla has vowed to never profit from servicing owner vehicles.
 				Tesla doesn't use auto dealers to sell vehicles. Instead, it sells vehicles directly to consumers. </p>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInRight">
 				<span><i class="fa fa-battery-full" aria-hidden="true"></i></span>
 				<h3>We are ALL IN</h3>
 				<p>This quote comes directly from the company's corporate values statement. It's the last value listed and the only one emphasized with capital letters. The value encapsulates Tesla's focused approach to business.</p>
@@ -242,7 +248,7 @@
 					<a href="#" class="button">See more</a>
 				</div>
 			</div>
-			<div class="player" data-property="{videoURL:'V6_85cSOIcE',containment:'#movie',showControls:false,startAt:0,mute:true,autoPlay:true,loop:true,opacity:1}">
+			<div class="player" data-property="{videoURL:'j5LQ6YPGzro',containment:'#movie',showControls:false,startAt:0,mute:true,autoPlay:true,loop:true,opacity:1}">
 			</div>
 		</div>
 
@@ -265,42 +271,42 @@
 	
 	<div class="advantages-content">
 		<div class="container">
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInLeft">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
 					<p>Velit laborum error illo ullam temporibus rem ipsa cupiditate, aut soluta iusto, quia ad repellat nisi incidunt voluptatibus mollitia maiores. </p>
 				</div>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInUp">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
 					<p>Velit laborum error illo ullam temporibus rem ipsa cupiditate, aut soluta iusto, quia ad repellat nisi incidunt voluptatibus mollitia maiores. </p>
 				</div>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInRight">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
 					<p>Velit laborum error illo ullam temporibus rem ipsa cupiditate, aut soluta iusto, quia ad repellat nisi incidunt voluptatibus mollitia maiores. </p>
 				</div>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInLeft">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
 					<p>Velit laborum error illo ullam temporibus rem ipsa cupiditate, aut soluta iusto, quia ad repellat nisi incidunt voluptatibus mollitia maiores. </p>
 				</div>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInDown">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
 					<p>Velit laborum error illo ullam temporibus rem ipsa cupiditate, aut soluta iusto, quia ad repellat nisi incidunt voluptatibus mollitia maiores. </p>
 				</div>
 			</div>
-			<div class="single-col">
+			<div class="single-col" data-animate="fadeInRight">
 				<span><i class="fa fa-search" aria-hidden="true"></i></span>
 				<div class="services-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
@@ -484,11 +490,28 @@
 			label: ''
 		});
 		/* count to */
-		$('.timer').countTo();		
+		$('.timer').countTo();
+		/* YTPlayer */
+		$('.player').YTPlayer();		
 	});
 
+	/* Viewport Checker */
+	
+	$('*[data-animate]').addClass('hide').each(function(){
+		$(this).viewportChecker({
+			classToAdd: 'show animated ' + $(this).data('animate'),
+			classToRemove: 'hide',
+			offset: 200
+		});
+	});
+
+	$('footer').viewportChecker({
+		classToAdd: 'animated slideInLeft'
+	});
+
+
 	$('#main-container').imagesLoaded(function(){
-		/* glowny slider */
+		/* Main slider */
 		$('#main-slider').bxSlider({
 			mode: 'fade',
 			auto: true,
