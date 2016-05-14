@@ -358,19 +358,19 @@ h3 {
 .our-team .single-col {
   display: inline;
   float: left;
-  width: 97.36842%;
+  width: 47.36842%;
   margin: 0 1.31579%; }
   @media screen and (min-width: 992px) {
     .our-team .single-col {
       display: inline;
       float: left;
-      width: 30.70175%;
+      width: 22.36842%;
       margin: 0 1.31579%; } }
   @media screen and (min-width: 1200px) {
     .our-team .single-col {
       display: inline;
       float: left;
-      width: 30.70175%;
+      width: 22.36842%;
       margin: 0 1.31579%; } }
 
 .footer-main .single-col {
@@ -843,7 +843,7 @@ a {
   margin-bottom: 30px;
   width: 100%; }
 .team-member h3 {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0 0 4px 0;
   color: #434343;
   font-weight: 400; }

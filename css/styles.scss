@@ -10,7 +10,7 @@ $column-width: 65;
 $gutter-width: 30;
 $total-width: 100%;
 
-.our-services .single-col {
+#facts .single-col {
 	@include column(12);
 	@media screen and (min-width: $tablet) {
 		@include column(2.4);
@@ -43,7 +43,7 @@ $total-width: 100%;
 	};
 }
 
-.our-team .single-col {
+#our-team .single-col {
 	@include column(6);
 	@media screen and (min-width: $tablet) {
 		@include column(3);
@@ -123,29 +123,32 @@ header {
 }
 
 .navbar {
-	height: 63px;
+	height: 60px;
 }
 
 .nav-logo {
 	float: left;
 	position: relative;
 	z-index: 2;
-	top: 8px;
+	top: 15px;
 	left: -20px;
-	
+	max-width: 260px;
+	img {
+	max-width: 90%;
+	@media screen and (max-width: $phone) {
+		max-width: 60%;
+	};
+}
 
 }
 
-.nav-logo img {
-	max-width: 70%;
-}
+
 
 .main-menu-content {
 	float: right;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50);
-	z-index: 2;
+	top: 15px;
+	z-index: 200;
 }
 
 ul {
@@ -204,7 +207,7 @@ float: none;
 		
 	};
 	.main-slide-2 {
-		background-image: url('../img/slider_2-test.jpg');
+		background-image: url('../img/slider_2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -269,9 +272,9 @@ float: none;
 	}
 }
 
-// Services
-.our-services {
-	padding: 80px 0 60px 0;
+// Facts
+#facts {
+	padding: 80px 0 160px 0;
 	overflow: auto;
 	.single-col {
 		margin-bottom: 30px;
@@ -307,9 +310,88 @@ float: none;
 	}
 }
 
-// Portfolio
+//Model-S
+#model-s {
+	text-align: center;
+	background: url('../img/autopilot.jpg') no-repeat center center fixed;
+	margin-bottom: 30px;
+	.model-s-inner {
+		position: relative;
+		z-index: 30;
+		.container {
+			position: relative;
+			z-index: 40;
+			padding: 125px 5% 125px 5%;
+		}
+		h2 {
+			@include header-mixin(48px, 26px);
+			color: white;
+		}
+		p {
+			color: $accent-colour;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 35px;
+		}
+	}
+}
 
-.portfolio {
+
+//Model-X
+#model-x {
+	text-align: center;
+	background: url('../img/model-x-inside.jpg') no-repeat center center fixed;
+	margin-bottom: 30px;
+	.model-x-inner {
+		position: relative;
+		z-index: 30;
+		.container {
+			position: relative;
+			z-index: 40;
+			padding: 125px 5% 125px 5%;
+		}
+		h2 {
+			@include header-mixin(48px, 26px);
+			color: white;
+		}
+		p {
+			color: $accent-colour;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 35px;
+		}
+	}
+}
+
+
+//Model-3
+#model-3 {
+	text-align: center;
+	background: url('../img/model-3.jpg') no-repeat center center fixed;
+	margin-bottom: 30px;
+	.model-3-inner {
+		position: relative;
+		z-index: 30;
+		.container {
+			position: relative;
+			z-index: 40;
+			padding: 125px 5% 125px 5%;
+		}
+		h2 {
+			@include header-mixin(48px, 26px);
+			color: white;
+		}
+		p {
+			color: $accent-colour;
+			font-size: 26px;
+			font-weight: 400;
+			line-height: 35px;
+		}
+	}
+}
+
+// Portfolio
+#portfolio {
 	background-color: #FFF4F2;
 	padding: 55px 0;
 	.owl-controls {
@@ -404,64 +486,6 @@ float: none;
 }
 
 
-.section-video {
-	display: none;
-	position: relative;
-	.container {
-		padding: 175px 0;
-		z-index: 5;
-	}
-	@media screen and (min-width: $phone) {
-		display: block;
-	}
-}
-
-#movie {
-	@include size(100%, 100%);
-	@include dark-overlay;
-}
-
-.video-line{
-	text-align: center;
-	h2 {
-		font-size: 48px;
-		margin-bottom: 26px;
-		color: white;
-		position: relative;
-	}
-	a {
-		position: relative;
-		@include basic-button(white, $accent-colour);
-		margin: 8px 0;
-		padding: 12px 30px;
-		@include basic-transition;
-		&:hover {
-			opacity: 0.7;
-		}
-	}
-}
-
-.section-video-text {
-	background-color: $accent-colour;
-	padding: 50px 0;
-	text-align: center;
-	h2 {
-		color: white;
-		a {
-			@include basic-button(white, $accent-colour);
-			border: solid white 1px;
-			margin: 8px 0 8px 65px;
-			padding: 10px 30px;
-			@include basic-transition;
-			&:hover {
-				color: $accent-colour;
-				background-color: white;
-				@include basic-transition;
-			}
-		}
-	}
-}
-
 .advantages {
 	padding: 80px 0 0 20px;
 	@include clerfix;
@@ -529,7 +553,7 @@ float: none;
 		.container {
 			position: relative;
 			z-index: 1;
-			padding: 175px;
+			padding: 175px 5% 175px 5%;
 		}
 		h2 {
 			@include header-mixin(48px, 26px);
@@ -551,7 +575,7 @@ float: none;
 
 // our team
 
-.our-team {
+#our-team {
 	padding: 55px 0 10px 0;
 	text-align: auto;
 	overflow: auto;
@@ -611,7 +635,7 @@ footer {
 	}
 
 .footer-main {
-		padding: 85px 0 0 65px;
+		padding: 40px 0 0 40px;
 		overflow: auto;
 		h3 {
 			@include header-mixin(18px, 30px);
