@@ -513,7 +513,7 @@ h3 {
       margin: 0 1.31579%; } }
 
 body {
-  padding-top: 50px; }
+  margin-top: 60px; }
 
 .container {
   max-width: 1200px;
@@ -699,7 +699,7 @@ a {
 
 #model-s {
   text-align: center;
-  background: url("../img/autopilot.jpg") no-repeat center center fixed;
+  background: url("../img/autopilot-faded.jpg") no-repeat center center fixed;
   margin-bottom: 30px; }
   #model-s .model-s-inner {
     position: relative;
@@ -722,7 +722,7 @@ a {
 
 #model-x {
   text-align: center;
-  background: url("../img/model-x-inside.jpg") no-repeat center center fixed;
+  background: url("../img/model-x-inside-faded.jpg") no-repeat center center fixed;
   margin-bottom: 30px; }
   #model-x .model-x-inner {
     position: relative;
@@ -745,7 +745,7 @@ a {
 
 #model-3 {
   text-align: center;
-  background: url("../img/model-3.jpg") no-repeat center center fixed;
+  background: url("../img/model-3-faded.jpg") no-repeat center center fixed;
   margin-bottom: 30px; }
   #model-3 .model-3-inner {
     position: relative;
@@ -768,7 +768,7 @@ a {
 
 #portfolio {
   background-color: #FFF4F2;
-  padding: 55px 0; }
+  padding: 100px 0 55px 0; }
   #portfolio .owl-controls {
     margin-top: 60px; }
 
@@ -942,7 +942,7 @@ a {
         transition: all 0.2s ease-in-out; }
 
 #our-team {
-  padding: 55px 0 10px 0;
+  padding: 100px 0 10px 0;
   text-align: auto;
   overflow: auto; }
   #our-team .single-col {
