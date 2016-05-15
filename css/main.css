@@ -649,16 +649,19 @@ a {
         color: #E51837; } }
   .main-slider-content p {
     font-size: 12px;
-    line-height: 24px; }
+    line-height: 24px;
+    width: 90%; }
     @media screen and (min-width: 768px) {
       .main-slider-content p {
         font-size: 25px;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px;
+        width: 90%; } }
     @media screen and (min-width: 992px) {
       .main-slider-content p {
         font-size: 25px;
         line-height: 30px;
-        color: #F5D4D9; } }
+        color: #F5D4D9;
+        width: 90%; } }
   .main-slider-content a {
     position: relative;
     color: white;
@@ -1260,15 +1263,5 @@ h3 {
 
 .slicknav_nav .slicknav_txtnode {
   margin-left: 15px; }
-
-/*
-.my-test {
-  @include my-size(10px);
-}
-
-.my-test {
-  @include border-radius-single(10px);
-}
-*/
 
 /*# sourceMappingURL=main.css.map */

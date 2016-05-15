@@ -254,14 +254,17 @@ float: none;
 	p {
 		font-size: 12px;
 		line-height: 24px;
+		width: 90%;
 		@media screen and (min-width: $phone) {
 			font-size: 25px;
 			padding-bottom: 20px;
+			width: 90%;
 		}
 		@media screen and (min-width: $tablet) {
 			font-size: 25px;
 			line-height: 30px;
 			color: $accent-colour-pale;
+			width: 90%;
 		}
 	}
 	a {
